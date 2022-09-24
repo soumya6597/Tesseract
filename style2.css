@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body{
+    overflow-x: hidden;
+}
+
+$defaultSeconds: 3s;
+
+body {
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 1000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+
+}
+
+.navbar-nav {
+    margin-left: 280px;
+}
+
+.navbar-nav a {
+    font-size: 14px;
+}
+
+.home {
+    width: 100vw;
+}
+
+.home .image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1435x;
+    height: 609.875px;
+    background-image: url("images/image.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 200px;
+}
+
+.home .row {
+    position: relative;
+    display: flex;
+    height: 40vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home .content {
+    transform: translateY(-70px);
+    margin-left: 60px;
+    width: 65%;
+}
+
+.home .row img {
+    width: 550px;
+    height: 301px;
+    border-radius: 20px;
+}
+
+.intro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 60px;
+}
+
+.intro h1 {
+    font-size: 50px;
+
+}
+
+#about {
+    position: relative;
+    min-height: 80vh;
+}
+
+#about .row {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#about h1 {
+    font-size: 50px;
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+#about .row img {
+    width: 550px;
+    height: 301px;
+    border-radius: 20px;
+}
+
+#about .content {
+    margin-left: 60px;
+    width: 50%;
+}
+
+#about .image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transform: translateY(-30px);
+    width: 40%;
+    margin-left: 80px;
+
+}
+
+#about .content2 {
+    position: relative;
+    display: flex;
+    left: 4%;
+}
+
+#about .content2 .accordion {
+    width: 600px;
+}
+
+#my-image {
+    height: 150px;
+    width: 155px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    overflow: hidden;
+    transform: translate(650px, -80px);
+    background-image: url(images/innerve.jpg);
+    background-size: cover;
+}
+
+section:nth-child(even) {
+    background: #e7e7e7;
+}
+
+.body {
+    position: relative;
+    display: flex;
+    min-height: 120vh;
+}
+
+.schedule {
+    position: relative;
+    display: flex;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.flex-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.flex-title {
+    color: #f1f1f1;
+    position: relative;
+    font-size: 6vw;
+    margin: auto;
+    text-align: center;
+    transform: rotate(90deg);
+    top: 15%;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+    @media screen and (max-width: 768px) {
+        transform: rotate(0deg) !important;
+    }
+}
+
+.flex-about {
+    opacity: 0;
+    color: #f1f1f1;
+    position: relative;
+    width: 70%;
+    font-size: 2vw;
+    padding: 5%;
+    top: 20%;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    line-height: 1.3;
+    margin: auto;
+    text-align: left;
+    transform: rotate(0deg);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+    @media screen and (max-width: 768px) {
+        padding: 0%;
+        border: 0px solid #f1f1f1;
+    }
+}
+
+
+.flex-slide {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    cursor: pointer;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+    @media screen and (max-width: 768px) {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+}
+
+.flex-slide p {
+    @media screen and (max-width: 768px) {
+        font-size: 2em;
+    }
+}
+
+.flex-slide ul li {
+    @media screen and (max-width: 768px) {
+        font-size: 2em;
+    }
+}
+
+.flex-slide:hover {
+    -webkit-flex-grow: 3;
+    flex-grow: 3;
+}
+
+.schedule .home {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/edu2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    @media screen and (min-width: 768px) {
+        animation: aboutFlexSlide $defaultSeconds 1;
+        animation-delay: 0s;
+    }
+}
+
+@keyframes aboutFlexSlide {
+    0% {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+    }
+
+    50% {
+        -webkit-flex-grow: 3;
+        flex-grow: 3;
+    }
+
+    100% {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+    }
+}
+
+.flex-title-home {
+    @media screen and (min-width: 768px) {
+        transform: rotate(90deg);
+        top: 15%;
+        animation: aboutFlexSlide $defaultSeconds 1;
+        animation-delay: 0s;
+    }
+}
+
+
+
+@keyframes homeFlextitle {
+    0% {
+        transform: rotate(90deg);
+        top: 15%;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        top: 15%;
+    }
+
+    100% {
+        transform: rotate(90deg);
+        top: 15%;
+    }
+}
+
+.flex-about-home {
+    opacity: 0;
+
+    @media screen and (min-width: 768px) {
+        animation: aboutFlexSlide $defaultSeconds 1;
+        animation-delay: 0s;
+    }
+}
+
+@keyframes flexAboutHome {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+.schedule .about {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/edu.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/fin.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.work {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/env.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    min-height: 50vh;
+    left: -10%;
+    justify-content: flex-start;
+}
+.footer .box-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 70vw;
+}
+.footer .box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    margin-left: 460px;
+    line-height: 2.8;
+    justify-content: center;
+
+}
+
+.footer a{
+    color: gray;
+    text-decoration: none;
+}
+.footer h3{
+    position: relative;
+    justify-content: center;
+    width: 250px;
+    font-size: 22px;
+    text-transform: capitalize;
+}
